@@ -20,7 +20,7 @@ export default function Contact() {
       <p className="section-eyebrow section-eyebrow--onaccent">Contact</p>
       <h2 className="contact-title">Let's build something.</h2>
       <p className="contact-lead">
-        Open to Software Engineering, Applied AI/ML, and Web3/DApp internships.
+        Open to Software Engineering, Applied AI/ML, and Web Development/DApp internships.
       </p>
 
       {copiedText && (

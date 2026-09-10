@@ -10,7 +10,7 @@ export default function Hero() {
         <p className="eyebrow">{personalInfo.role}</p>
         <h1 id="hero-title" className="hero-title">
           {personalInfo.headline} <span className="pop pop--violet">AI</span> and{' '}
-          <span className="pop pop--pink">Web3</span>.
+          <span className="pop pop--pink">Web Development</span>.
         </h1>
         <p className="hero-bio">
           Python and applied AI/ML on one side, decentralized development on Hedera on the

@@ -9,7 +9,7 @@ student, used to get recruiters from "who is this" to "here's their work" and
 Recruiters and hiring managers screening for:
 - Software Development & Engineering internships (Python, C/C++, problem-solving)
 - Applied AI/ML roles (model integration, prompt engineering, pipeline work)
-- Web3/DApp prototyping roles (junior dev/research on Hedera)
+- Web Development/DApp prototyping roles (junior dev/research on Hedera)
 
 ## 3. Goals / success criteria
 - A visitor understands "what this person does" within five seconds of landing
@@ -35,7 +35,7 @@ Recruiters and hiring managers screening for:
 - **Name**: Pritish Mund
 - **Status**: 2nd-year B.Tech CSE, GIET University, Gunupur, started 2025,
   CGPA 8.2
-- **Skills**: Web development, Python, Applied AI/ML, Hedera/Web3, C (basics),
+- **Skills**: Web development, Python, Applied AI/ML, Hedera/Web Development, C (basics),
   Java (basics)
 - **Projects**:
   - SOS APK — Android emergency-alert app; detects the user's mobile device

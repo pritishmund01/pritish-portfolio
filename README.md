@@ -1,6 +1,6 @@
 # Pritish Mund — Portfolio 🚀
 
-A high-performance personal portfolio built with **React 19**, **Vite**, and pure **Neo-Brutalist CSS**. Designed to present software engineering, applied AI/ML, and Hedera Web3 builds with speed, clarity, and personality.
+A high-performance personal portfolio built with **React 19**, **Vite**, and pure **Neo-Brutalist CSS**. Designed to present software engineering, applied AI/ML, and Hedera Web Development builds with speed, clarity, and personality.
 
 ![Pritish Mund Portfolio](public/profile.jpg)
 

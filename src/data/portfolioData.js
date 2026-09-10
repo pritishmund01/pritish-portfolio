@@ -33,13 +33,13 @@ export const traitsData = [
   }
 ];
 
-export const skillCategories = ["All", "Languages", "Applied AI / ML", "Web3", "Core"];
+export const skillCategories = ["All", "Languages", "Applied AI / ML", "Web Development", "Core"];
 
 export const skillsData = [
   { id: "web-dev", name: "Web development", category: "Languages", accent: "violet" },
   { id: "python", name: "Python", category: "Languages", accent: "pink" },
   { id: "applied-ai", name: "Applied AI/ML", category: "Applied AI / ML", accent: "amber" },
-  { id: "hedera", name: "Hedera / Web3", category: "Web3", accent: "mint" },
+  { id: "hedera", name: "Hedera / Web Development", category: "", accent: "mint" },
   { id: "c-basics", name: "C (basics)", category: "Core", accent: "violet" },
   { id: "java-basics", name: "Java (basics)", category: "Core", accent: "pink" }
 ];
