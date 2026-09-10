@@ -37,7 +37,7 @@
   - Freedom with AI certification.
 - [x] Contact endpoints configured:
   - `mailto:pritishmund9@gmail.com`
-  - `tel:+917815004161`
+
   - `https://github.com/pritishmund01`
 
 ---
