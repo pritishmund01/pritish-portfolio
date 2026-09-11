@@ -1,6 +1,34 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export default function App() {
+  const [formStatus, setFormStatus] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setFormStatus('sending');
+    const form = e.target;
+    const data = new FormData(form);
+
+    try {
+      const response = await fetch('https://formspree.io/f/xbjnopqr', {
+        method: 'POST',
+        body: data,
+        headers: {
+          Accept: 'application/json',
+        },
+      });
+
+      if (response.ok) {
+        setFormStatus('success');
+        form.reset();
+      } else {
+        setFormStatus('error');
+      }
+    } catch {
+      setFormStatus('error');
+    }
+  };
+
   return (
     <>
       <header className="site-header">
@@ -20,26 +48,30 @@ export default function App() {
           <div className="hero-decor hero-circle" aria-hidden="true"></div>
           <div className="hero-text">
             {/* Live Availability Badge */}
-            <div style={{
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: '8px',
-              background: '#ECFDF5',
-              border: '2px solid #059669',
-              padding: '4px 14px',
-              borderRadius: '9999px',
-              fontSize: '0.82rem',
-              fontWeight: '700',
-              color: '#065F46',
-              marginBottom: '16px'
-            }}>
-              <span style={{
-                width: '8px',
-                height: '8px',
-                borderRadius: '50%',
-                background: '#10B981',
-                display: 'inline-block'
-              }}></span>
+            <div
+              style={{
+                display: 'inline-flex',
+                alignItems: 'center',
+                gap: '8px',
+                background: '#ECFDF5',
+                border: '2px solid #059669',
+                padding: '4px 14px',
+                borderRadius: '9999px',
+                fontSize: '0.82rem',
+                fontWeight: '700',
+                color: '#065F46',
+                marginBottom: '16px',
+              }}
+            >
+              <span
+                style={{
+                  width: '8px',
+                  height: '8px',
+                  borderRadius: '50%',
+                  background: '#10B981',
+                  display: 'inline-block',
+                }}
+              ></span>
               Available for Internships
             </div>
 
@@ -236,13 +268,29 @@ export default function App() {
           </ol>
         </section>
       </main>
-      {/* FOOTER */}
+
+      {/* FOOTER & DIRECT CONTACT */}
       <footer id="contact" className="contact">
-        <div className="contact-buttons" style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', alignItems: 'center' }}>
-          <a
-            href="mailto:pritishmund9@gmail.com"
-            className="btn btn--onlight"
-          >
+        <div className="contact-decor" aria-hidden="true"></div>
+        <p className="section-eyebrow section-eyebrow--onaccent">Contact</p>
+        <h2 className="contact-title">Let's build something.</h2>
+        <p className="contact-lead">
+          Open to Software Engineering, Applied AI/ML, and Full-Stack Web Development internships.
+        </p>
+
+        {/* Quick Social Buttons */}
+        <div
+          className="contact-buttons"
+          style={{
+            display: 'flex',
+            flexWrap: 'wrap',
+            gap: '14px',
+            alignItems: 'center',
+            justifyContent: 'center',
+            marginBottom: '36px',
+          }}
+        >
+          <a href="mailto:pritishmund9@gmail.com" className="btn btn--onlight">
             pritishmund9@gmail.com
           </a>
           <a
@@ -262,6 +310,134 @@ export default function App() {
             LinkedIn ↗
           </a>
         </div>
+
+        {/* Direct Message Form Box */}
+        <form
+          onSubmit={handleSubmit}
+          style={{
+            maxWidth: '560px',
+            width: '100%',
+            margin: '0 auto',
+            background: '#ffffff',
+            padding: '32px 28px',
+            borderRadius: '16px',
+            border: '3px solid #18181b',
+            boxShadow: '8px 8px 0px #18181b',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '18px',
+            textAlign: 'left',
+          }}
+        >
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <label style={{ fontSize: '0.88rem', fontWeight: '800', color: '#18181b' }}>Your Name</label>
+            <input
+              type="text"
+              name="name"
+              required
+              placeholder="e.g. Satya Nadella"
+              style={{
+                width: '100%',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                border: '2px solid #18181b',
+                fontSize: '0.95rem',
+                outline: 'none',
+                fontFamily: 'inherit',
+                background: '#fafafa',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <label style={{ fontSize: '0.88rem', fontWeight: '800', color: '#18181b' }}>Your Email</label>
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="name@company.com"
+              style={{
+                width: '100%',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                border: '2px solid #18181b',
+                fontSize: '0.95rem',
+                outline: 'none',
+                fontFamily: 'inherit',
+                background: '#fafafa',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <label style={{ fontSize: '0.88rem', fontWeight: '800', color: '#18181b' }}>Subject</label>
+            <input
+              type="text"
+              name="subject"
+              required
+              placeholder="Internship / Web Development project"
+              style={{
+                width: '100%',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                border: '2px solid #18181b',
+                fontSize: '0.95rem',
+                outline: 'none',
+                fontFamily: 'inherit',
+                background: '#fafafa',
+              }}
+            />
+          </div>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <label style={{ fontSize: '0.88rem', fontWeight: '800', color: '#18181b' }}>Message</label>
+            <textarea
+              name="message"
+              rows="4"
+              required
+              placeholder="Hi Pritish, let's connect regarding an opportunity..."
+              style={{
+                width: '100%',
+                padding: '12px 14px',
+                borderRadius: '8px',
+                border: '2px solid #18181b',
+                fontSize: '0.95rem',
+                outline: 'none',
+                resize: 'vertical',
+                fontFamily: 'inherit',
+                background: '#fafafa',
+              }}
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            disabled={formStatus === 'sending'}
+            className="btn btn--primary"
+            style={{
+              padding: '12px 28px',
+              fontSize: '1rem',
+              fontWeight: '700',
+              cursor: formStatus === 'sending' ? 'not-allowed' : 'pointer',
+              alignSelf: 'flex-start',
+              marginTop: '6px',
+            }}
+          >
+            {formStatus === 'sending' ? 'Sending...' : 'Send Message ↗'}
+          </button>
+
+          {formStatus === 'success' && (
+            <p style={{ color: '#059669', fontWeight: '700', fontSize: '0.9rem', margin: 0 }}>
+              ✓ Message sent successfully! I'll get back to you soon.
+            </p>
+          )}
+
+          {formStatus === 'error' && (
+            <p style={{ color: '#dc2626', fontWeight: '700', fontSize: '0.9rem', margin: 0 }}>
+              ✕ Error sending message. Please email me directly at pritishmund9@gmail.com.
+            </p>
+          )}
+        </form>
       </footer>
 
       <a href="#contact" className="mobile-cta">Say hi</a>
