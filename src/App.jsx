@@ -238,12 +238,11 @@ export default function App() {
       </main>
       {/* FOOTER */}
       <footer id="contact" className="contact">
-        <div className="contact-decor" aria-hidden="true"></div>
-        <p className="section-eyebrow section-eyebrow--onaccent">Contact</p>
-        <h2 className="contact-title">Let's build something.</h2>
-        <p className="contact-lead">Open to Software Engineering, Applied AI/ML, and Full-Stack Web Development internships.</p>
-        <div className="contact-buttons">
-          <a href="mailto:pritishmund9@gmail.com" className="btn btn--onlight">
+        <div className="contact-buttons" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', alignItems: 'center' }}>
+          <a
+            href="mailto:pritishmund9@gmail.com"
+            className="btn btn--onlight"
+          >
             pritishmund9@gmail.com
           </a>
           <a
@@ -259,6 +258,7 @@ export default function App() {
             className="btn btn--onlight-secondary"
             target="_blank"
             rel="noopener noreferrer"
+            style={{ display: 'inline-flex' }}
           >
             LinkedIn ↗
           </a>
