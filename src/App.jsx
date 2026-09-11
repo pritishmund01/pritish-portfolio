@@ -238,7 +238,7 @@ export default function App() {
       </main>
       {/* FOOTER */}
       <footer id="contact" className="contact">
-        <div className="contact-buttons" style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', alignItems: 'center' }}>
+        <div className="contact-buttons" style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', alignItems: 'center' }}>
           <a
             href="mailto:pritishmund9@gmail.com"
             className="btn btn--onlight"
@@ -247,7 +247,7 @@ export default function App() {
           </a>
           <a
             href="https://github.com/pritishmund01"
-            className="btn btn--onlight-secondary"
+            className="btn btn--onlight"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -255,10 +255,9 @@ export default function App() {
           </a>
           <a
             href="https://www.linkedin.com/in/pritish-mund-27101237b"
-            className="btn btn--onlight-secondary"
+            className="btn btn--onlight"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ display: 'inline-flex' }}
           >
             LinkedIn ↗
           </a>
