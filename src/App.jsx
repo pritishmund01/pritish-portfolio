@@ -243,13 +243,33 @@ export default function App() {
         <p className="section-eyebrow section-eyebrow--onaccent">Contact</p>
         <h2 className="contact-title">Let's build something.</h2>
         <p className="contact-lead">Open to Software Engineering, Applied AI/ML, and Full-Stack Web Development internships.</p>
-        <div className="contact-buttons">
-          <a href="mailto:pritishmund9@gmail.com" className="btn btn--onlight">pritishmund9@gmail.com</a>
-          <a href="https://github.com/pritishmund01" className="btn btn--onlight-secondary" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-        </div>
-      </footer>
+        <div className="<div className=" contact-buttons">
+        <a href="mailto:pritishmund9@gmail.com" className="btn btn--onlight">
+          pritishmund9@gmail.com
+        </a>
+        <a
+          href="https://github.com/pritishmund01"
+          className="btn btn--onlight-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub ↗
+        </a>
+        <a
+          href="https://www.linkedin.com/in/pritish-mund-27101237b"
+          className="btn btn--onlight-secondary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn ↗
+        </a>
+      </div>">
+      <a href="mailto:pritishmund9@gmail.com" className="btn btn--onlight">pritishmund9@gmail.com</a>
+      <a href="https://github.com/pritishmund01" className="btn btn--onlight-secondary" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    </div >
+      </footer >
 
-      <a href="#contact" class="mobile-cta">Say hi</a>
+    <a href="#contact" class="mobile-cta">Say hi</a>
     </>
   );
 }
