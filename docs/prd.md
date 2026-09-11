@@ -29,7 +29,7 @@ Recruiters and hiring managers screening for:
 3. **Skills** — chip list grouped by category.
 4. **Work** — project cards, most visually prominent section on the page.
 5. **Timeline** — education + achievements, chronological.
-6. **Contact** — footer with direct links (email, phone, GitHub).
+6. **Contact** — footer with direct links (email, GitHub).
 
 ## 5. Content inventory (current, real data only)
 - **Name**: Pritish Mund
@@ -44,7 +44,7 @@ Recruiters and hiring managers screening for:
 - **Achievements**: Hacknovation 2.0 (hackathon), MySQL technical workshop,
   NPTEL "The Joy of Computing using Python" (Elite), "Freedom with AI"
   certification.
-- **Contact**: pritishmund9@gmail.com, +91 78150 04161,
+- **Contact**: pritishmund9@gmail.com,
   github.com/pritishmund01
 
 ## 6. Out of scope (for now)

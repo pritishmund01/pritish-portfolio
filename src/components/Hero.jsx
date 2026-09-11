@@ -13,8 +13,7 @@ export default function Hero() {
           <span className="pop pop--pink">Web Development</span>.
         </h1>
         <p className="hero-bio">
-          Python and applied AI/ML on one side, decentralized development on Hedera on the
-          other. My approach is simple: turn coursework and hands-on builds into finished,
+          Python, applied AI/ML, and web development — my approach is simple: turn coursework and hands-on builds into finished,
           documented software instead of just writing syntax. Two shipped projects —{' '}
           <strong>Helix AI</strong> and <strong>SOS APK</strong> — back that up.
         </p>

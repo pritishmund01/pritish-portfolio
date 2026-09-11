@@ -1,6 +1,6 @@
 # Pritish Mund — Portfolio 🚀
 
-A high-performance personal portfolio built with **React 19**, **Vite**, and pure **Neo-Brutalist CSS**. Designed to present software engineering, applied AI/ML, and Hedera Web Development builds with speed, clarity, and personality.
+A high-performance personal portfolio built with **React 19**, **Vite**, and pure **Neo-Brutalist CSS**. Designed to present software engineering, applied AI/ML, and Web Development builds with speed, clarity, and personality.
 
 ![Pritish Mund Portfolio](public/profile.jpg)
 
@@ -72,5 +72,4 @@ npm run build
 ## 📬 Contact & Connect
 
 - **Email**: [pritishmund9@gmail.com](mailto:pritishmund9@gmail.com)
-- **Phone**: +91 78150 04161
 - **GitHub**: [github.com/pritishmund01](https://github.com/pritishmund01)

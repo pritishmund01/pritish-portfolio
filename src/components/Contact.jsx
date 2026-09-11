@@ -20,7 +20,7 @@ export default function Contact() {
       <p className="section-eyebrow section-eyebrow--onaccent">Contact</p>
       <h2 className="contact-title">Let's build something.</h2>
       <p className="contact-lead">
-        Open to Software Engineering, Applied AI/ML, and Web Development/DApp internships.
+        Open to Software Engineering, Applied AI/ML, and Web Development internships.
       </p>
 
       {copiedText && (
@@ -49,24 +49,6 @@ export default function Contact() {
           </button>
         </div>
 
-        <div className="contact-action-group">
-          <a
-            href={`tel:${contactInfo.phone.replace(/\s+/g, '')}`}
-            className="btn btn--onlight-secondary"
-            title="Call phone number"
-          >
-            {contactInfo.phone}
-          </a>
-          <button
-            type="button"
-            className="btn btn--copy"
-            onClick={(e) => handleCopy(contactInfo.phone, 'phone number', e)}
-            aria-label="Copy phone number"
-            title="Copy phone"
-          >
-            📋
-          </button>
-        </div>
 
         <a
           href={contactInfo.github}

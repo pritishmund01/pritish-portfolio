@@ -2,9 +2,9 @@ export const personalInfo = {
   name: "Pritish Mund",
   role: "2nd-year B.Tech CSE · GIET University, Gunupur",
   headline: "I build working software across",
-  bio: "Python and applied AI/ML on one side, decentralized development on Hedera on the other. My approach is simple: turn coursework and hands-on builds into finished, documented software instead of just writing syntax. Two shipped projects — Helix AI and SOS APK — back that up.",
+  bio: "Python, applied AI/ML, and web development — my approach is simple: turn coursework and hands-on builds into finished, documented software instead of just writing syntax. Two shipped projects — Helix AI and SOS APK — back that up.",
   aboutParagraphs: [
-    "I work at the intersection of algorithmic foundations and emerging tech — Python, applied AI/ML, and decentralized architectures, specifically the Hedera network. My approach is to turn technical coursework and hands-on implementations into functional, documented software rather than just writing syntax.",
+    "I work at the intersection of algorithmic foundations and emerging tech — Python, applied AI/ML, and web development. My approach is to turn technical coursework and hands-on implementations into functional, documented software rather than just writing syntax.",
     "I'd rather ship one real implementation with reproducible results than collect certificates. I'm deliberately not a tutorial collector, a generic 'tech enthusiast,' or a passive student waiting on the curriculum — I want a visitor's first five seconds here to read as clarity and momentum."
   ]
 };
@@ -36,10 +36,9 @@ export const traitsData = [
 export const skillCategories = ["All", "Languages", "Applied AI / ML", "Web Development", "Core"];
 
 export const skillsData = [
-  { id: "web-dev", name: "Web development", category: "Languages", accent: "violet" },
   { id: "python", name: "Python", category: "Languages", accent: "pink" },
   { id: "applied-ai", name: "Applied AI/ML", category: "Applied AI / ML", accent: "amber" },
-  { id: "hedera", name: "Hedera / Web Development", category: "", accent: "mint" },
+  { id: "web-development", name: "Web Development", category: "Web Development", accent: "mint" },
   { id: "c-basics", name: "C (basics)", category: "Core", accent: "violet" },
   { id: "java-basics", name: "Java (basics)", category: "Core", accent: "pink" }
 ];
@@ -102,11 +101,17 @@ export const timelineData = [
     title: "Freedom with AI",
     detail: "Comprehensive generative AI and workflow automation credential.",
     accent: "violet"
+  },
+  {
+    id: "hedera",
+    type: "Course",
+    title: "Hedera Network Fundamentals",
+    detail: "Completed coursework on the Hedera distributed ledger network.",
+    accent: "mint"
   }
 ];
 
 export const contactInfo = {
   email: "pritishmund9@gmail.com",
-  phone: "+91 78150 04161",
   github: "https://github.com/pritishmund01"
 };
