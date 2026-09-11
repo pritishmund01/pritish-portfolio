@@ -7,15 +7,23 @@ export default function App() {
     e.preventDefault();
     setFormStatus('sending');
     const form = e.target;
-    const data = new FormData(form);
+    const formData = new FormData(form);
+
+    const payload = {
+      name: formData.get('name'),
+      email: formData.get('email'),
+      subject: formData.get('subject'),
+      message: formData.get('message'),
+      timestamp: new Date().toISOString(),
+    };
 
     try {
-      const response = await fetch('https://formspree.io/f/xbjnopqr', {
+      const response = await fetch('https://hook.us2.make.com/fh1722vy6795t155umdj84mitw0mp24v', {
         method: 'POST',
-        body: data,
         headers: {
-          Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
+        body: JSON.stringify(payload),
       });
 
       if (response.ok) {
@@ -311,7 +319,7 @@ export default function App() {
           </a>
         </div>
 
-        {/* Direct Message Form Box */}
+        {/* Direct Message Form */}
         <form
           onSubmit={handleSubmit}
           style={{
